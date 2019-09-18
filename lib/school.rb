@@ -1,7 +1,7 @@
 # code here!
 class School
   attr_reader :add_student, :roster, :grade, :sort
-  
+
   def initialize(roster)
     @roster = {}
   end
@@ -14,15 +14,15 @@ class School
       roster[grade_number] << name
     end
   end
-  
+
   def grade(grade_number)
     @grade
     roster[grade_number]
   end
-  
+
   def sort
-    sorted_roster = roster.sort_by do |grade,name| 
-      grade,name.sort
+    sorted_roster = roster.sort_by do |grade,name|
+      grade,name.sort{}
     end
     sorted_roster.to_h
   end
