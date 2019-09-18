@@ -26,8 +26,8 @@ class School
     roster.each do |grade_number, name|
       sorted_roster[grade_number] = name.sort
     end
+  
     sorted_roster
-
-end
+  end
 
 end
