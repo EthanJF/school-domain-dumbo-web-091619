@@ -22,7 +22,7 @@ class School
   
   def sort
     sorted_roster = roster.sort_by do |grade,name| 
-      grade,name
+      grade,name.sort
     end
     sorted_roster.to_h
   end
