@@ -23,6 +23,8 @@ class School
   def sort
     sorted_roster = roster.sort
     sorted_roster.to_h
+    new_sorted_roster = sorted_roster.sort_by {|key, value| key}
+    new_sorted_roster.to_h
 
   end
 
