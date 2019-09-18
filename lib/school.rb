@@ -21,10 +21,10 @@ class School
   end
 
   def sort
-    sorted_roster = roster.sort
+    sorted_roster = roster.sort_by do |grade_number, name|
+      name.sort
+    end
     sorted_roster.to_h
-    new_sorted_roster = sorted_roster.sort_by {|key, value| value.sort}
-    new_sorted_roster.to_h
 
   end
 
