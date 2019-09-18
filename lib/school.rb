@@ -21,7 +21,7 @@ class School
   end
 
   def sort
-    sorted_roster = roster.sort{}
+    sorted_roster = roster.sort
     sorted_roster.to_h
   end
 
