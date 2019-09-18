@@ -23,14 +23,7 @@ class School
   def sort
     sorted_roster = roster.sort
     sorted_roster.to_h
- 
-    sorted_roster.each do |grade_number, name|
-      name.each do |each_name|
-        each_name.sort
-      end
-    end
-    sorted_roster.to_h
-       
+
   end
 
 end
