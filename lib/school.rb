@@ -25,7 +25,9 @@ class School
     sorted_roster.to_h
  
     sorted_roster.each do |grade_number, name|
-      name 
+      name.each do |each_name|
+        each_name.sort
+      end
     end
     sorted_roster.to_h
        
