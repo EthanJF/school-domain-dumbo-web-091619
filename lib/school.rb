@@ -1,6 +1,6 @@
 # code here!
 class School
-  attr_reader :add_student, :roster, :grade
+  attr_reader :add_student, :roster, :grade, :sort
   
   def initialize(roster)
     @roster = {}
@@ -18,6 +18,10 @@ class School
   def grade(grade_number)
     @grade
     roster[grade_number]
+  end
+  
+  def sort
+    roster.sort
   end
 
 end
